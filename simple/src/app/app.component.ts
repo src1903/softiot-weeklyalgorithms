@@ -53,4 +53,47 @@ export class AppComponent {
     return volume;
   }
 
+    26.12.2023 Girilen Sayının Faktoriyelini Hesaplayan Program
+
+  factorial() {
+    let factorial = 1;
+
+    if(this.r<0) {
+      console.log("Pozitif Sayi Giriniz..")
+    }
+    else{
+      for(let i=1;i<=this.value;i++){
+        factorial *= i;
+      }
+    }
+    console.log(factorial);
+  }
+
+  26.12.2023 Klavyeden Girilen 10 sayı içinde tekleri ve çiftleri ayrı toplayan program.
+
+  findNumbers(){
+    let evenTotal = 0, oddTotal = 0;
+    for(let i=0;i<10;i++) {
+      let value = Number(prompt("Bir sayi giriniz:"));
+      if(value%2 == 0) {
+        evenTotal += value;
+      }
+      if(value%2 == 1) {
+        oddTotal += value;
+      }
+    }
+    console.log("Even numbers total:",evenTotal);
+    console.log("Odd numbers total:",oddTotal);
+  }
+  
+  26.12.2023 Klavyeden girilen n değerine kadar 1 + 1/3 + 1/5 + .... Hesaplayan program
+
+  diff(){ 
+    let total = 0;
+    for(let i=0;i<=this.value;i+2){
+      total = total + 1/(i+1);
+    }
+    console.log(total);
+  }
+
 }
