@@ -96,4 +96,19 @@ export class AppComponent {
     console.log(total);
   }
 
+  27.12.2023 Klavyeden Girilen 10 Sayıdan Büyük Olanı Bulan Program
+
+  bigOne() {
+      let list = new Array(10);
+
+      for(let i=0; i<list.length;i++){
+        list.push(list[this.value]);
+        if(list[this.value] > list[this.value-1]){
+          var big = list[this.value];
+      }
+      console.log(big);
+ 
+      }
+    }
+
 }
